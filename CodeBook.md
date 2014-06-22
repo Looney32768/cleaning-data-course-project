@@ -8,7 +8,8 @@ Input data is stored in multiple files:
   * y_{train|test}.txt - holds IDs of the activity performed by subject during measument
   
   Assignment steps:
-  1.  Merges the training and the test sets to create one data set. Is carried out by call to "merge_training_and_test_sets" function which makes
+
+  1. Merges the training and the test sets to create one data set. Is carried out by call to "merge_training_and_test_sets" function which makes
   2 calls for "construct_tidy_dataset" function provided with string specifying if training or test data set is to be used. 
   Inside that function a data frame is constructed from subject IDs column (subject file), activity column (from y file, but replaced with 
   human-readable string from activity_labels rather than ID) and variable values from X file, annotated via setting colnames to 'Subject', 
